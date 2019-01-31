@@ -7,6 +7,10 @@ public class mfciuft
 	{
 		// TODO Auto-generated method stub
 		System.out.println("AHHHHHHHHH");
+		for(int i = 0; i < 5; i++)
+		{
+			System.out.println(i);
+		}
 
 	}
 
