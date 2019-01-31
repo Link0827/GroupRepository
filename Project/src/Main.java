@@ -1,4 +1,5 @@
 
-public class Main {
-
+public class Main
+{
+	System.out.println("your MAMA!!!!!!!!!!!!!!!!!!!!!");
 }
