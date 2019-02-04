@@ -7,11 +7,6 @@ public class RandomizerClass
 
 	public static Random theInstance = null;
 	
-	public RandomizerClass()
-	{
-		
-	}
-	
 	public static Random getInstance()
 	{
 		if (theInstance == null)
