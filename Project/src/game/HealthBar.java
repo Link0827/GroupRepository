@@ -23,6 +23,12 @@ public class HealthBar
 		health += added;
 	}
 	
+	
+	public String toString()
+	{
+		return "You have a health level of " + health;
+	}
+	
 
 	
 	
