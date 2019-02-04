@@ -18,11 +18,11 @@ public class HealthBar
 	{
 		health = num;
 	}
+	
 	public void addHealth(int added)
 	{
 		health += added;
 	}
-	
 	
 	public String toString()
 	{
