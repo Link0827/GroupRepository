@@ -10,6 +10,7 @@ public class TestInteractions {
 		
 		Interactions c = new Interactions(new Random().nextInt(3));
 		System.out.println(c.getInteraction());
+		c.interaction();
 
 	}
 

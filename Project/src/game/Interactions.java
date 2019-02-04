@@ -1,5 +1,7 @@
 package game;
 
+import java.util.Random;
+
 public class Interactions 
 {
 	private int inter;
@@ -26,6 +28,23 @@ public class Interactions
 		}
 		return three;
 		
+	}
+	
+	public void interaction()
+	{
+		if(inter == 0)
+		{
+			int numMonsters = new Random().nextInt(6);
+			System.out.println("You have run into " + numMonsters + " monsters");
+		}
+		else if(inter == 1)
+		{
+			System.out.println("You have found a merchent");
+		}
+		else if(inter == 2)
+		{
+			System.out.println("You have had an uneventful day");
+		}
 	}
 	
 	
