@@ -2,15 +2,19 @@ package game;
 
 import java.util.Random;
 
+
+
+
 public class Interactions 
 {
 	private int inter;
 	
 	private static int MONSTERS_HEALTH = 5;
 	private int attack;
+
 	
 	private static final String one = "Monsters";
-	private static final String two = "Trader";
+	private static final String two = "Wizard";
 	private static final String three = "Nothing";
 	
 	
@@ -67,16 +71,12 @@ public class Interactions
 		}
 		else if(inter == 1)
 		{
-			System.out.println("You have found a merchent");
+			System.out.println("You have found a traveling wizard");
+			
 		}
 		else if(inter == 2)
 		{
 			System.out.println("You have had an uneventful day");
 		}
 	}
-	
-	
-	
-
-
 }
