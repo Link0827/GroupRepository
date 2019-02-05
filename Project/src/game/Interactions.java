@@ -6,7 +6,7 @@ public class Interactions
 {
 	private int inter;
 	
-	private static final int MONSTERS_HEALTH = 5;
+	private static int MONSTERS_HEALTH = 5;
 	private int attack;
 	
 	private static final String one = "Monsters";
@@ -55,7 +55,8 @@ public class Interactions
 		{
 			int numMonsters = new Random(1).nextInt(6);
 			System.out.println("You have run into " + numMonsters + " monsters");
-			for(int i = 0; i < numMonsters; i++)
+			int monsterHealth = MONSTERS_HEALTH *= numMonsters;
+			for(int i = 0; i < monsterHealth; i++)
 			{
 				
 			}
