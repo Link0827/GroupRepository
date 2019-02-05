@@ -17,6 +17,10 @@ public class Interactions
 	public Interactions(int num)
 	{
 		inter = num;
+
+	}
+	public void Attack()
+	{
 		attack = 5;
 	}
 	
