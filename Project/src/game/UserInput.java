@@ -11,9 +11,10 @@ public class UserInput
 		Scanner scan = new Scanner(System.in);
 		String c = scan.nextLine();
 		System.out.println(c);
-		Scanner Scan = new Scanner(System.in);
-		int num = Scan.nextInt();
+
+		int num = scan.nextInt();
 		System.out.println(num);
+		
 	}
 
 }
