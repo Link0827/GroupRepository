@@ -1,6 +1,7 @@
 package game;
 
 import java.util.Random;
+import java.util.Scanner;
 
 
 
@@ -11,16 +12,17 @@ public class Interactions
 	
 	private static int MONSTERS_HEALTH = 5;
 	private int attack;
-
+	private HealthBar health;
 	
 	private static final String one = "Monsters";
 	private static final String two = "Wizard";
 	private static final String three = "Nothing";
 	
 	
-	public Interactions(int num)
+	public Interactions(int num, int num2)
 	{
 		inter = num;
+		health = new HealthBar();
 
 	}
 	public void Attack()
@@ -53,7 +55,7 @@ public class Interactions
 	
 	public String toString()
 	{
-		return "you have an attack power of " + attack;
+		return "you have an attack power of " + attack + " and a health of "+ health;
 	}
 	
 	
@@ -72,7 +74,19 @@ public class Interactions
 		else if(inter == 1)
 		{
 			System.out.println("You have found a traveling wizard");
+			Scanner scan = new Scanner(System.in);
+			System.out.println("Do You want a health bonus?");
+			String c = scan.nextLine();
 			
+			if(c.equalsIgnoreCase("Yes"))
+			{
+				System.out.println(health);
+				health.setHealth(health.getHealth() + 10);
+				System.out.println(health);
+			}
+			if(!c.equals("yes"))
+			{
+			}
 		}
 		else if(inter == 2)
 		{
