@@ -16,12 +16,16 @@ public class Interactions
 	
 	public Interactions(int num)
 	{
+<<<<<<< HEAD
+		
+=======
 		inter = num;
 
 	}
 	public void Attack()
 	{
 		attack = 5;
+>>>>>>> branch 'master' of https://github.com/Link0827/GroupRepository.git
 	}
 	
 	public String getInteraction()
