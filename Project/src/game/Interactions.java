@@ -15,9 +15,7 @@ public class Interactions
 	private HealthBar health;
 	
 	private static final String one = "Monsters";
-	private static final String two = "Wizard";
-	private static final String three = "Nothing";
-	
+	private static final String two = "Nothing";
 	
 	public Interactions(int num, int num2)
 	{
@@ -36,11 +34,8 @@ public class Interactions
 		{
 			return one;
 		}
-		else if(inter == 1)
-		{
-			return two;
-		}
-		return three;
+		return two;
+		
 		
 	}
 	public void setAttack(int c)
@@ -73,24 +68,8 @@ public class Interactions
 		}
 		else if(inter == 1)
 		{
-			System.out.println("You have found a traveling wizard");
-			Scanner scan = new Scanner(System.in);
-			System.out.println("Do You want a health bonus?");
-			String c = scan.nextLine();
-			
-			if(c.equalsIgnoreCase("Yes"))
-			{
-				System.out.println(health);
-				health.setHealth(health.getHealth() + 10);
-				System.out.println(health);
-			}
-			if(!c.equals("yes"))
-			{
-			}
-		}
-		else if(inter == 2)
-		{
 			System.out.println("You have had an uneventful day");
 		}
+		
 	}
 }

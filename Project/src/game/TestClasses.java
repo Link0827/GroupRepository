@@ -8,28 +8,48 @@ public class TestClasses {
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		HealthBar c = new HealthBar();
-		System.out.println(c.getHealth());
-		c.setHealth(30);
-		System.out.println(c.getHealth());
-		c.addHealth(-5);
-		System.out.println(c.getHealth());
-		System.out.println(c);
 		
-		HealthBar health = new HealthBar();
-		Interactions a = new Interactions(new Random().nextInt(3), health.getHealth());
-		
-		running(health, a);
-		System.out.println("do you want to keep traveling? answer t or f ");
+		System.out.println("If the screen stops after printing a line try to hit the ENTER key on your keyboard.");
 		Scanner scan = new Scanner(System.in);
-		String c1 = scan.nextLine();
-		while(c1.equalsIgnoreCase("T"))
+		System.out.println("Like this");
+		String c = scan.nextLine();
+
+		
+		System.out.println("What is your name?");
+		c = scan.nextLine();
+		for(int i = 0; i < 3; i++)
 		{
-			Interactions a1 = new Interactions(new Random().nextInt(3), health.getHealth());
-			running(health, a1);
+			System.out.print("PROSESING NAME...");
+		}
+		scan.nextLine();
+		System.out.println();
+		Player player = new Player(c);
+		System.out.println("Welcome to the game " + player.getName());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		HealthBar c1 = new HealthBar();
+		Interactions a = new Interactions(new Random().nextInt(3), c1.getHealth());
+		
+		running(c1, a);
+		System.out.println("do you want to keep traveling? answer t or f ");
+		Scanner scan1 = new Scanner(System.in);
+		String c11 = scan1.nextLine();
+		while(c11.equalsIgnoreCase("T"))
+		{
+			Interactions a1 = new Interactions(new Random().nextInt(3), c1.getHealth());
+			running(c1, a1);
 			System.out.println("do you want to keep traveling? answer t or f ");
-			Scanner scan1 = new Scanner(System.in);
-			String c11 = scan1.nextLine();
+			Scanner scan11 = new Scanner(System.in);
+			String c111 = scan11.nextLine();
 		}
 		
 
