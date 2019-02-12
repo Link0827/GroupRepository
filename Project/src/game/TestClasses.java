@@ -27,21 +27,21 @@ public class TestClasses {
 		System.out.println("Welcome to the game " + player.getName());
 
 		
-		HealthBar c1 = new HealthBar();
-		Interactions a = new Interactions(new Random().nextInt(3), c1.getHealth());
+		HealthBar q = new HealthBar();
+		Interactions a = new Interactions(new Random().nextInt(3), q.getHealth());
 		
-		running(c1, a);
+		running(q, a);
 		System.out.println("do you want to keep traveling? answer t or f ");
 		Scanner scan1 = new Scanner(System.in);
-		String c11 = scan1.nextLine();
-		while(c11.equalsIgnoreCase("T"))
+		c = scan1.nextLine();
+		while(c.equalsIgnoreCase("T"))
 		{
-			Interactions a1 = new Interactions(new Random().nextInt(3), c1.getHealth());
-			running(c1, a1);
+			Interactions a1 = new Interactions(new Random().nextInt(3), q.getHealth());
+			running(q, a1);
 			System.out.println("do you want to keep traveling? answer t or f ");
 			Scanner scan11 = new Scanner(System.in);
-			String c111 = scan11.nextLine();
-			if(c111.equalsIgnoreCase("f"))
+			c = scan11.nextLine();
+			if(c.equalsIgnoreCase("f"))
 			{
 				System.out.println("Thanks for playing");
 				
