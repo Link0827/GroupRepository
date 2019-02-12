@@ -41,6 +41,11 @@ public class TestClasses {
 			System.out.println("do you want to keep traveling? answer t or f ");
 			Scanner scan11 = new Scanner(System.in);
 			String c111 = scan11.nextLine();
+			if(c111.equalsIgnoreCase("f"))
+			{
+				System.out.println("Thanks for playing");
+				
+			}
 		}
 		
 
