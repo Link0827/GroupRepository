@@ -25,16 +25,7 @@ public class TestClasses {
 		System.out.println();
 		Player player = new Player(c);
 		System.out.println("Welcome to the game " + player.getName());
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 		HealthBar c1 = new HealthBar();
 		Interactions a = new Interactions(new Random().nextInt(3), c1.getHealth());

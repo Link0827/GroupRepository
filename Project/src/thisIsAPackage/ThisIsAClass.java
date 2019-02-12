@@ -4,23 +4,36 @@ import java.awt.Dimension;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ThisIsAClass
 {
 	private static JFrame frame;
+	private static JPanel panel;
 
 	public static void main(String[] args) 
 	{
-	    JFrame jframe = new JFrame("JFrame Size Example");
-	    jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    jframe.setPreferredSize(new Dimension(400, 300));
-	    jframe.pack();
-	    jframe.setLocationRelativeTo(null);
-	    jframe.setVisible(true);
-	    JButton button = new JButton("this be a button");
-	    jframe.add(button);
-		
+		JFrame frame = new JFrame("JFrame Size Example");
+	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    frame.setPreferredSize(new Dimension(400, 300));
+	    frame.pack();
+	    frame.setLocationRelativeTo(null);
+	    frame.setVisible(true);
+	    JButton button1 = new JButton("This be a button");
+
+	    frame.add(button1);
+
+	    
+	    
+
+        
+
+
+
+	    }
 	}
-		
-}
 
